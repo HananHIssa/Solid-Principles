@@ -1,19 +1,20 @@
+
 # 🌟 SOLID Principles and More
 
 ## 🌈 Once Upon a Time in the World of Code...
 
-Are you ready to dive into an inspiring story about Uncle Bob?
+Are you ready to dive into an inspiring story about Uncle Bob?  
 Uncle Bob, a true legend in the world of **Clean Code** (and don’t worry if you’re new to it — we’re on this journey together!), believed that code should be as clean and beautiful as a well-crafted masterpiece.
 
-In the year 2000, he published a groundbreaking article titled **"Design Principles and Design Patterns."**
+In the year 2000, he published a groundbreaking article titled **"Design Principles and Design Patterns."**  
 In this article, he emphasized a powerful message: **Software must be maintainable, flexible, and ready for change** — just like a living organism adapting to its environment.
 
-From these insights, Uncle Bob crafted a golden formula — a collection of best practices to build strong, elegant software.
+From these insights, Uncle Bob crafted a golden formula — a collection of best practices to build strong, elegant software.  
 He called it **SOLID**.
 
 ## 📚 What is SOLID?
 
-It's not just a word; it's a **philosophy**.
+It's not just a word; it's a **philosophy**.  
 An acronym formed from **five fundamental design principles** that guide developers toward writing robust and scalable code.
 
 Let's break down these five principles:
@@ -42,14 +43,8 @@ Let's break down these five principles:
 
 In the provided code examples, we demonstrated each principle through small, practical applications, and wrote simple **unit tests** to verify that each principle is applied correctly.
 
-If you need to understand more clearly, take a quick look at the examples above.
+If you need to understand more clearly, take a quick look at the examples above.  
 If you're interested in **testing** (like I am 🧙‍♂️), I've also uploaded simple unit tests for each principle.
-
-**Sources:**
-- [JavaTechOnline - MCQ on SOLID Principles](https://javatechonline.com/mcq-on-solid-principles-practice-test/)
-- [Skilr - SOLID Principles Practice Exam](https://www.skilr.com/solid-principles-practice-exam)
-- [QuizGecko - SOLID Principles Quiz](https://quizgecko.com/learn/solid-principles-quiz-o6uhap)
-- [GeeksforGeeks - SOLID Principle in Programming](https://www.geeksforgeeks.org/solid-principle-in-programming-understand-with-real-life-examples/)
 
 ---
 
@@ -167,5 +162,15 @@ public class Example {
 
 ---
 
+# 📚 Sources
+
+- [JavaTechOnline - MCQ on SOLID Principles](https://javatechonline.com/mcq-on-solid-principles-practice-test/)
+- [Skilr - SOLID Principles Practice Exam](https://www.skilr.com/solid-principles-practice-exam)
+- [QuizGecko - SOLID Principles Quiz](https://quizgecko.com/learn/solid-principles-quiz-o6uhap)
+- [GeeksforGeeks - SOLID Principle in Programming](https://www.geeksforgeeks.org/solid-principle-in-programming-understand-with-real-life-examples/)
+
+---
+
 > ✨ I hope this README helps you enjoy and better understand SOLID principles and some important OOP fundamentals! Let's keep learning and growing! ✨
 
+---
