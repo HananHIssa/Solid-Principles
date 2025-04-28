@@ -1,6 +1,4 @@
 
----
-
 # 📚 SOLID Principles — Learn and Apply
 
 🌟 **Once upon a time in the world of code...**
