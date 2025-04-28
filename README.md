@@ -1,4 +1,3 @@
-Solid Principles
  **Once upon a time in the world of code...**
 
 Are you ready to dive into an inspiring story about Uncle Bob?  
