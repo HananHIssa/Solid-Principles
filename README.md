@@ -4,47 +4,66 @@
 ## 🌈 Once Upon a Time in the World of Code...
 
 Are you ready to dive into an inspiring story about Uncle Bob?  
-Uncle Bob, a true legend in the world of **Clean Code** (and don’t worry if you’re new to it — we’re on this journey together!), believed that code should be as clean and beautiful as a well-crafted masterpiece.
+Uncle Bob, a true legend in the world of **Clean Code**, believed that code should be as clean and beautiful as a well-crafted masterpiece.
 
-In the year 2000, he published a groundbreaking article titled **"Design Principles and Design Patterns."**  
-In this article, he emphasized a powerful message: **Software must be maintainable, flexible, and ready for change** — just like a living organism adapting to its environment.
+In 2000, he published the article **"Design Principles and Design Patterns,"** highlighting that **software must be maintainable, flexible, and ready for change**.
 
-From these insights, Uncle Bob crafted a golden formula — a collection of best practices to build strong, elegant software.  
+From these insights, Uncle Bob crafted a golden formula:  
 He called it **SOLID**.
 
 ## 📚 What is SOLID?
 
-It's not just a word; it's a **philosophy**.  
-An acronym formed from **five fundamental design principles** that guide developers toward writing robust and scalable code.
-
-Let's break down these five principles:
+It's not just a word; it's a **philosophy** — an acronym for **five design principles** that help you write robust, scalable code:
 
 ### S - Single Responsibility Principle (SRP)
 - **"A class should have only one reason to change."**
-- A class should do **one job**. This ensures it is not overly complex and has a single, well-defined purpose.
+- A class should do **only one job**.
 
 ### O - Open/Closed Principle (OCP)
 - **"Software entities should be open for extension but closed for modification."**
-- Add new functionality without modifying existing code.
+- Add new functionality **without changing existing code**.
 
 ### L - Liskov Substitution Principle (LSP)
 - **"Subtypes must be substitutable for their base types."**
-- Ensure inheritance is used correctly so that subclasses can stand in for their parent classes.
+- A child class should be usable in place of a parent class.
 
 ### I - Interface Segregation Principle (ISP)
 - **"No client should be forced to depend on methods it does not use."**
-- Break large interfaces into smaller, specific ones to increase flexibility.
+- Prefer **smaller**, **more specific** interfaces.
 
 ### D - Dependency Inversion Principle (DIP)
 - **"High-level modules should not depend on low-level modules. Both should depend on abstractions."**
-- Focus on decoupling dependencies between modules to make the system flexible and maintainable.
+- **Decouple** modules to improve flexibility.
+
+---
 
 ## 📄 Examples and Unit Testing
 
-In the provided code examples, we demonstrated each principle through small, practical applications, and wrote simple **unit tests** to verify that each principle is applied correctly.
+In the provided code examples, each SOLID principle was demonstrated practically, with simple **unit tests** verifying the concepts.
 
-If you need to understand more clearly, take a quick look at the examples above.  
-If you're interested in **testing** (like I am 🧙‍♂️), I've also uploaded simple unit tests for each principle.
+---
+
+# 🧪 Quick Note About Unit Testing
+
+When writing unit tests, always follow **3 steps**:
+1. **Arrange** → Prepare objects and inputs.
+2. **Act** → Call the method you want to test.
+3. **Assert** → Verify the result using assertions like `assertEquals(expected, actual, delta)`.
+
+✅ Keep tests **clean, simple, and focused on one functionality**.
+
+**Example:**
+```java
+@Test
+public void testRectangleArea() {
+    // Arrange
+    LiskovSSubstitutionPrincipleUpdate.Rectangle rectangle = new LiskovSSubstitutionPrincipleUpdate.Rectangle(5, 10);
+    // Act
+    double actualArea = rectangle.calculateArea();
+    // Assert
+    assertEquals(50.0, actualArea, 0.0001);
+}
+```
 
 ---
 
@@ -52,17 +71,12 @@ If you're interested in **testing** (like I am 🧙‍♂️), I've also uploade
 
 ## 🔹 Polymorphism in OOP
 
-Polymorphism means **calling a child class through its parent reference** and determining which child to use either during:
-- **Runtime** (Dynamic method overriding)
-- **Compile-time** (Static method overloading)
+Polymorphism allows calling a child class through its parent reference, determined at:
 
-Don't worry! I'll explain simply:
+- **Runtime** → Dynamic method overriding (needs inheritance).
+- **Compile-time** → Static method overloading.
 
-### ✨ Dynamic Method Overriding
-- Child selected **during code running** according to object type.
-- Requires **inheritance**.
-
-#### Example:
+### ✨ Dynamic Method Overriding Example
 ```java
 abstract class Animal {
     public abstract void sound();
@@ -90,14 +104,9 @@ public class Main {
 }
 ```
 
-### ✨ Static Method Overloading
-- Method selected **during compile time** based on method signature.
-- **Does not need inheritance.**
-
-#### Example:
+### ✨ Static Method Overloading Example
 ```java
 public class Calculator {
-
     public static int add(int number1, int number2) {
         return number1 + number2;
     }
@@ -119,28 +128,21 @@ public class Calculator {
 
 ### 🔍 Static Method
 - Belongs to the class itself.
-- Can call another static method.
-- Can create objects of a static class (where language allows).
 - Cannot be overridden.
 
 ### 🔍 Instance Method
 - Belongs to an object.
-- Requires object creation.
 - Can be overridden.
 
 ### 🔍 Static Class
-- Cannot be instantiated (in languages like C#).
-- In Java, only **nested classes** can be static.
-- Can contain only static members.
+- Only nested classes in Java can be static.
 
 ### 🔍 Instance Class
-- Regular class.
-- Can create multiple instances (objects).
+- Regular class, creates multiple instances.
 
 ### ✔️ Quick Example
 ```java
 public class Example {
-
     static class StaticClass {
         public static void staticMethod() {
             System.out.println("Static method called.");
@@ -153,7 +155,6 @@ public class Example {
 
     public static void main(String[] args) {
         StaticClass.staticMethod();
-
         Example example = new Example();
         example.instanceMethod();
     }
@@ -162,8 +163,7 @@ public class Example {
 
 ---
 
-# 📚 Sources
-
+## 📚 Sources:
 - [JavaTechOnline - MCQ on SOLID Principles](https://javatechonline.com/mcq-on-solid-principles-practice-test/)
 - [Skilr - SOLID Principles Practice Exam](https://www.skilr.com/solid-principles-practice-exam)
 - [QuizGecko - SOLID Principles Quiz](https://quizgecko.com/learn/solid-principles-quiz-o6uhap)
@@ -171,6 +171,6 @@ public class Example {
 
 ---
 
-> ✨ I hope this README helps you enjoy and better understand SOLID principles and some important OOP fundamentals! Let's keep learning and growing! ✨
+✨ **I hope this clean structure helps you present your project even more professionally!** ✨
 
 ---
