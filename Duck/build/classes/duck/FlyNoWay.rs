@@ -1,2 +1,0 @@
-FlyNoWay
-duck.NewClass

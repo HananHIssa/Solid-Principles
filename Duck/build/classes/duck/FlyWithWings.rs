@@ -1,2 +1,0 @@
-FlyWithWings
-duck.NewClass
