@@ -1,0 +1,2 @@
+FlyWithWings
+duck.NewClass

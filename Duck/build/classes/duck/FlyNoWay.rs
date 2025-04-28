@@ -1,0 +1,2 @@
+FlyNoWay
+duck.NewClass
