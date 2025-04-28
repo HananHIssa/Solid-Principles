@@ -1,86 +1,73 @@
+# 🌟 SOLID Principles and More
 
-# 📚 SOLID Principles — Learn and Apply
+## 🌈 Once Upon a Time in the World of Code...
 
-🌟 **Once upon a time in the world of code...**
+Are you ready to dive into an inspiring story about Uncle Bob?
+Uncle Bob, a true legend in the world of **Clean Code** (and don’t worry if you’re new to it — we’re on this journey together!), believed that code should be as clean and beautiful as a well-crafted masterpiece.
 
-Are you ready to dive into an inspiring story about Uncle Bob?  
-Uncle Bob, a true legend in the world of **Clean Code** (and don’t worry if you’re new to it — we’re on this journey together!), believed that code should be as clean and beautiful as a well-crafted masterpiece. 
+In the year 2000, he published a groundbreaking article titled **"Design Principles and Design Patterns."**
+In this article, he emphasized a powerful message: **Software must be maintainable, flexible, and ready for change** — just like a living organism adapting to its environment.
 
-In the year 2000, he published a groundbreaking article titled **"Design Principles and Design Patterns."**  
-In this article, he emphasized a powerful message:  
-**Software must be maintainable, flexible, and ready for change** — just like a living organism adapting to its environment. 🌱✨
-
-From these insights, Uncle Bob crafted a golden formula — a collection of best practices to build strong, elegant software.  
+From these insights, Uncle Bob crafted a golden formula — a collection of best practices to build strong, elegant software.
 He called it **SOLID**.
 
----
+## 📚 What is SOLID?
 
-## ✨ What is SOLID?
-
-It's not just a word; it's a **philosophy** —  
+It's not just a word; it's a **philosophy**.
 An acronym formed from **five fundamental design principles** that guide developers toward writing robust and scalable code.
 
-Let's break them down:
+Let's break down these five principles:
+
+### S - Single Responsibility Principle (SRP)
+- **"A class should have only one reason to change."**
+- A class should do **one job**. This ensures it is not overly complex and has a single, well-defined purpose.
+
+### O - Open/Closed Principle (OCP)
+- **"Software entities should be open for extension but closed for modification."**
+- Add new functionality without modifying existing code.
+
+### L - Liskov Substitution Principle (LSP)
+- **"Subtypes must be substitutable for their base types."**
+- Ensure inheritance is used correctly so that subclasses can stand in for their parent classes.
+
+### I - Interface Segregation Principle (ISP)
+- **"No client should be forced to depend on methods it does not use."**
+- Break large interfaces into smaller, specific ones to increase flexibility.
+
+### D - Dependency Inversion Principle (DIP)
+- **"High-level modules should not depend on low-level modules. Both should depend on abstractions."**
+- Focus on decoupling dependencies between modules to make the system flexible and maintainable.
+
+## 📄 Examples and Unit Testing
+
+In the provided code examples, we demonstrated each principle through small, practical applications, and wrote simple **unit tests** to verify that each principle is applied correctly.
+
+If you need to understand more clearly, take a quick look at the examples above.
+If you're interested in **testing** (like I am 🧙‍♂️), I've also uploaded simple unit tests for each principle.
+
+**Sources:**
+- [JavaTechOnline - MCQ on SOLID Principles](https://javatechonline.com/mcq-on-solid-principles-practice-test/)
+- [Skilr - SOLID Principles Practice Exam](https://www.skilr.com/solid-principles-practice-exam)
+- [QuizGecko - SOLID Principles Quiz](https://quizgecko.com/learn/solid-principles-quiz-o6uhap)
+- [GeeksforGeeks - SOLID Principle in Programming](https://www.geeksforgeeks.org/solid-principle-in-programming-understand-with-real-life-examples/)
 
 ---
 
-### 🧩 S — Single Responsibility Principle (SRP)
-> "A class should have only one reason to change."  
-Each class should focus on one job only, making it simple and well-organized.
+# 🌟 Bonus: Other Things I've Learned
 
----
+## 🔹 Polymorphism in OOP
 
-### 🧩 O — Open/Closed Principle (OCP)
-> "Software entities should be open for extension but closed for modification."  
-You can add new features without altering the existing working code.
+Polymorphism means **calling a child class through its parent reference** and determining which child to use either during:
+- **Runtime** (Dynamic method overriding)
+- **Compile-time** (Static method overloading)
 
----
+Don't worry! I'll explain simply:
 
-### 🧩 L — Liskov Substitution Principle (LSP)
-> "Subtypes must be substitutable for their base types."  
-Inheritance should be used correctly so that child classes behave like their parent classes without issues.
+### ✨ Dynamic Method Overriding
+- Child selected **during code running** according to object type.
+- Requires **inheritance**.
 
----
-
-### 🧩 I — Interface Segregation Principle (ISP)
-> "Do not force any client to depend on interfaces it does not use."  
-Keep interfaces focused and avoid making classes implement irrelevant methods.
-
----
-
-### 🧩 D — Dependency Inversion Principle (DIP)
-> "High-level modules should not depend on low-level modules. Both should depend on abstractions."  
-This promotes decoupling, making the system more flexible and maintainable.
-
----
-
-## 🧪 Unit Testing
-
-If you are interested in testing (just like me!), I have uploaded simple **unit tests** for each principle example above.  
-Feel free to check them and practice!
-
----
-
-## 🌟 Bonus: What Else I Learned During SOLID Study
-
-During my SOLID principles study, I explored another important OOP concept called **Polymorphism**. Here's a short explanation:
-
----
-
-### 🔹 What is Polymorphism?
-
-Polymorphism means calling child classes through their parent class reference and deciding **which child** at:
-- **Runtime**: (Dynamic Method Overriding)
-- **Compile Time**: (Static Method Overloading)
-
-Let’s dive deeper:
-
----
-
-### 🔸 Dynamic Method Overriding
-- **Definition:** The child class is selected during the program execution based on the object's type.
-- **Inheritance is required.**
-- **Example:**
+#### Example:
 ```java
 abstract class Animal {
     public abstract void sound();
@@ -103,19 +90,19 @@ class Cat extends Animal {
 public class Main {
     public static void main(String[] args) {
         Animal animal = new Dog();
-        animal.sound(); // Output: Bark
+        animal.sound();  // Output: Bark
     }
 }
 ```
 
----
+### ✨ Static Method Overloading
+- Method selected **during compile time** based on method signature.
+- **Does not need inheritance.**
 
-### 🔸 Static Method Overloading
-- **Definition:** The method is selected during **compile time** based on the method's signature (parameters).
-- **Inheritance is not required.**
-- **Example:**
+#### Example:
 ```java
 public class Calculator {
+
     public static int add(int number1, int number2) {
         return number1 + number2;
     }
@@ -125,29 +112,60 @@ public class Calculator {
     }
 
     public static void main(String[] args) {
-        System.out.println(add(1, 2));     // Output: 3
-        System.out.println(add(1, 2, 3));  // Output: 6
+        System.out.println(add(1, 2));      // Output: 3
+        System.out.println(add(1, 2, 3));    // Output: 6
     }
 }
 ```
 
 ---
 
-✅ **Summary:**
-- **Dynamic Overriding** = Decision during runtime (requires inheritance).
-- **Static Overloading** = Decision during compile time (no inheritance needed).
+## 🔹 Static Methods, Static Classes vs. Instance Methods, Instance Classes
+
+### 🔍 Static Method
+- Belongs to the class itself.
+- Can call another static method.
+- Can create objects of a static class (where language allows).
+- Cannot be overridden.
+
+### 🔍 Instance Method
+- Belongs to an object.
+- Requires object creation.
+- Can be overridden.
+
+### 🔍 Static Class
+- Cannot be instantiated (in languages like C#).
+- In Java, only **nested classes** can be static.
+- Can contain only static members.
+
+### 🔍 Instance Class
+- Regular class.
+- Can create multiple instances (objects).
+
+### ✔️ Quick Example
+```java
+public class Example {
+
+    static class StaticClass {
+        public static void staticMethod() {
+            System.out.println("Static method called.");
+        }
+    }
+
+    public void instanceMethod() {
+        System.out.println("Instance method called.");
+    }
+
+    public static void main(String[] args) {
+        StaticClass.staticMethod();
+
+        Example example = new Example();
+        example.instanceMethod();
+    }
+}
+```
 
 ---
 
-## 📚 Sources:
+> ✨ I hope this README helps you enjoy and better understand SOLID principles and some important OOP fundamentals! Let's keep learning and growing! ✨
 
-- [JavaTechOnline - SOLID MCQs](https://javatechonline.com/mcq-on-solid-principles-practice-test/)
-- [Skilr - SOLID Principles Exam](https://www.skilr.com/solid-principles-practice-exam)
-- [QuizGecko - SOLID Quiz](https://quizgecko.com/learn/solid-principles-quiz-o6uhap)
-- [GeeksForGeeks - SOLID Explained](https://www.geeksforgeeks.org/solid-principle-in-programming-understand-with-real-life-examples/)
-
----
-
-# 🎯 Keep Learning and Keep Growing!
-
----
